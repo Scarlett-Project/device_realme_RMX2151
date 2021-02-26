@@ -21,14 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2151/device.mk)
 
-# Inherit some common Octavi OS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-TARGET_GAPPS_ARCH := arm64
-OCTAVI_BUILD_TYPE := OFFICIAL
-OCTAVI_DEVICE_MAINTAINER := ashuk1109
+# Inherit some common NusantaraROM stuff.
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+
+# BUild Type
+NAD_BUILD_TYPE := Smiley_Edition
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_RMX2151
+PRODUCT_NAME := nad_RMX2151
 PRODUCT_DEVICE := RMX2151
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme G95 Series
