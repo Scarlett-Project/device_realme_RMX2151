@@ -15,4 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_RMX2151.mk
+    $(LOCAL_DIR)/exui_RMX2151.mk
+
+COMMON_LUNCH_CHOICES := \
+    exui_RMX2151-eng \
+    exui_RMX2151-userdebug \
+    exui_RMX2151-user
